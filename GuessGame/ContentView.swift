@@ -17,17 +17,29 @@ struct ContentView: View {
            Button(action: {
                print("Hello, Button 1")
            }) {
-               Text("Button")
+               Image("dog")
+                   .frame(maxWidth: .infinity)
+                   .frame(height: 50)
+                   .background(Color.blue)
+                   .clipShape(RoundedRectangle(cornerRadius: 25))
            }
            Button(action: {
                print("Hello, Button 2")
            }) {
-               Text("Button")
+               Image("cat")
+                   .frame(maxWidth: .infinity)
+                   .frame(height: 50)
+                   .background(Color.blue)
+                   .clipShape(RoundedRectangle(cornerRadius: 25))
            }
            Button(action: {
                print("Hello, Button 3")
            }) {
-               Text("Button")
+               Image("fox")
+                   .frame(maxWidth: .infinity)
+                   .frame(height: 50)
+                   .background(Color.blue)
+                   .clipShape(RoundedRectangle(cornerRadius: 25))
            }
        }
        .padding()
