@@ -14,13 +14,19 @@ struct ContentView: View {
                Spacer()
                Text("Guess the Animal")
            }
-           Button(action: {}) {
+           Button(action: {
+               print("Hello, Button 1")
+           }) {
                Text("Button")
            }
-           Button(action: {}) {
+           Button(action: {
+               print("Hello, Button 2")
+           }) {
                Text("Button")
            }
-           Button(action: {}) {
+           Button(action: {
+               print("Hello, Button 3")
+           }) {
                Text("Button")
            }
        }
