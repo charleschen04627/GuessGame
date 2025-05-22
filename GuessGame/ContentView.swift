@@ -19,7 +19,8 @@ struct ContentView: View {
            .frame(height: 350)
            HStack {
                Spacer()
-               Text("Guess the Animal")
+               Text("Score 0")
+                   .font(.system(size: 15, weight: .semibold))
            }
            Button(action: {
                print("Hello, Button 1")
