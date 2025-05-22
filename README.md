@@ -1,6 +1,6 @@
 # GuessGame
 
-A number guessing game developed with SwiftUI.
+A animal guessing game developed with SwiftUI.
 
 ## Features
 
