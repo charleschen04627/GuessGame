@@ -10,6 +10,13 @@ import SwiftUI
 struct ContentView: View {
    var body: some View {
        VStack {
+          VStack {
+              Group {
+                  Text("?")
+                      .font(.system(size: 100, weight: .bold))
+              }
+          }
+           .frame(height: 350)
            HStack {
                Spacer()
                Text("Guess the Animal")
@@ -41,6 +48,7 @@ struct ContentView: View {
                    .background(Color.blue)
                    .clipShape(RoundedRectangle(cornerRadius: 25))
            }
+           Spacer()
        }
        .padding()
    }
