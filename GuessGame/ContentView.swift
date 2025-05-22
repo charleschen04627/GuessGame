@@ -28,7 +28,9 @@ struct ContentView: View {
                if currentAnswer == 0 {
                    score += 1
                } else {
-                   score -= 1
+                   if score > 0 {
+                       score -= 1
+                   }
                }
            }) {
                Image("dog")
@@ -41,7 +43,9 @@ struct ContentView: View {
                if currentAnswer == 1 {
                    score += 1
                } else {
-                   score -= 1
+                   if score > 0 {
+                       score -= 1
+                   }
                }
            }) {
                Image("cat")
@@ -54,7 +58,9 @@ struct ContentView: View {
                if currentAnswer == 2 {
                    score += 1
                } else {
-                   score -= 1
+                   if score > 0 {
+                       score -= 1
+                   }
                }
            }) {
                Image("fox")
