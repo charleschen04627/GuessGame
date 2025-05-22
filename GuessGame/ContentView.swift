@@ -25,13 +25,7 @@ struct ContentView: View {
                    .font(.system(size: 15, weight: .semibold))
            }
            Button(action: {
-               if currentAnswer == 0 {
-                   score += 1
-               } else {
-                   if score > 0 {
-                       score -= 1
-                   }
-               }
+               check(answer: 0)
            }) {
                Image("dog")
                    .frame(maxWidth: .infinity)
@@ -40,13 +34,7 @@ struct ContentView: View {
                    .clipShape(RoundedRectangle(cornerRadius: 25))
            }
            Button(action: {
-               if currentAnswer == 1 {
-                   score += 1
-               } else {
-                   if score > 0 {
-                       score -= 1
-                   }
-               }
+               check(answer: 1)
            }) {
                Image("cat")
                    .frame(maxWidth: .infinity)
@@ -55,13 +43,7 @@ struct ContentView: View {
                    .clipShape(RoundedRectangle(cornerRadius: 25))
            }
            Button(action: {
-               if currentAnswer == 2 {
-                   score += 1
-               } else {
-                   if score > 0 {
-                       score -= 1
-                   }
-               }
+               check(answer: 2)
            }) {
                Image("fox")
                    .frame(maxWidth: .infinity)
@@ -72,6 +54,16 @@ struct ContentView: View {
            Spacer()
        }
        .padding()
+   }
+
+   func check(answer: Int) {
+       if answer == currentAnswer {
+           score += 1
+       } else {
+           if score > 0 {
+               score -= 1
+           }
+       }
    }
 }
 
