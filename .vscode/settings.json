@@ -1,0 +1,6 @@
+{
+  "cursor.chat.locale": "zh-TW",
+  "cursor.chat.defaultLanguage": "Chinese",
+  "cursor.general.preferredLanguage": "zh-TW",
+  "cursor.chat.systemPrompt": "請使用繁體中文回答所有問題和解釋程式碼。"
+}
